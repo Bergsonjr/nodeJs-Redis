@@ -1,0 +1,48 @@
+{
+  "name": "redisNodeJs",
+  "version": "1.0.0",
+  "description": "An awesome project",
+  "author": "Bergson Jr <bergsonjr@icloud.com>",
+  "homepage": "https://github.com/Bergsonjr/redisNodeJs#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "main.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint 'src/**/*.js' 'test/**/*.js'",
+    "start": "node main.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bergsonjr/redisNodeJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bergsonjr/redisNodeJs/issues"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "esm": "3.2.25",
+    "express": "4.17.1",
+    "ioredis": "4.14.1",
+    "uuid": "3.3.3"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.7.7",
+    "@types/jest": "24.0.24",
+    "coveralls": "3.0.9",
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "jest": "24.9.0",
+    "prettier": "1.19.1"
+  },
+  "license": "MIT"
+}
